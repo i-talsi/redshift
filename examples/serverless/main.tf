@@ -15,8 +15,8 @@ terraform {
   }
 }
 
-module "./module/redshift_serverless" {
-  source                                  = "./redshift_serverless"
+module "redshift_serverless" {
+  source                                  = "../../modules/redshift_serverless"
   app_name                                = var.app_name
   app_environment                         = var.app_environment
   
